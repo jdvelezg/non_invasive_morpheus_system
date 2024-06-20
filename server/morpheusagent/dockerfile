@@ -1,0 +1,19 @@
+#builder
+FROM maven:latest AS maven_builder
+ENV TARGET_ENV="test"
+RUN echo 'Building Back-End ...'> /build.txt
+WORKDIR /usr/morpheusagent/
+COPY . .
+COPY ./*.properties ./src/main/resources/
+RUN echo 'spring.profiles.active='${TARGET_ENV} > ./src/main/resources/application.properties
+#RUN echo '-Dhttps.protocols=TLSv1.2' > ./jvm.config
+RUN mvn package
+
+
+#backend App
+FROM eclipse-temurin:latest
+WORKDIR /app
+COPY --from=maven_builder /usr/morpheusagent/target/morpheusagent-0.0.1-SNAPSHOT.jar .
+
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/app/morpheusagent-0.0.1-SNAPSHOT.jar"]

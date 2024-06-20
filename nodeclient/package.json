@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@stomp/stompjs": "^7.0.0",
+    "axios": "^1.4.0",
+    "directory-tree": "^3.5.1",
+    "systeminformation": "^5.17.16",
+    "uuid": "^9.0.0",
+    "websocket": "^1.0.34",
+    "ws": "^8.13.0"
+  },
+  "name": "nodeclient",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

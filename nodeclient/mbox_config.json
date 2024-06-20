@@ -1,0 +1,57 @@
+{
+	"agent": {
+		"api_url": "http://",
+		"api_port": "8080"
+	},
+	"mqserver": {
+		"url": "",
+		"port": ""
+	},
+	"device": {
+		"token": "",
+		"type": "bed",
+		"active": true,
+		"uuid": "",
+		"patient_uuid": "",
+		"yBedDimension": 186,
+		"xBedDimension": 110,
+		"bedDimensionUnits": "cm",
+		"lastOnline": "",
+		"ipAddress": "",
+		"patientDto": {
+			"name": "",
+			"uuid": ""
+		}
+	},
+	"patient": {
+		"uuid": "",
+		"name": ""
+	},
+	"sensors": [
+		{
+			"recorder": {
+				"command": null,
+				"filepath": null,
+				"streamer": false,
+				"params": null,
+				"description": null
+			},
+			"description": null,
+			"name": "FSR_A0",
+			"active": true,
+			"uuid": "",
+			"transducerType": "FSR",
+			"physicalMin": -5,
+			"physicalMax": 0,
+			"digitalMin": 0,
+			"digitalMax": 2047,
+			"xLocation": 30,
+			"yLocation": 50,
+			"xDimension": 2,
+			"yDimension": 2,
+			"accessProtocol": "I2C",
+			"portAddress": "",
+			"physicalDimension": "V"
+		}
+	]
+}
