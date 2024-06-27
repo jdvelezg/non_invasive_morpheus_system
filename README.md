@@ -1,4 +1,5 @@
 # Non-Invasive Morpheus System
+The Morpheus device or Morpheus Box (MoBo) aims to monitor vital signs during sleep and over extended periods in the patient's home environment using non-invasive technologies. The hardware components of the MoBo device are focused on commercially available and low-cost materials.
 
 ## Contents
 
