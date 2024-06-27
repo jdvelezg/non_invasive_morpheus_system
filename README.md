@@ -220,3 +220,6 @@ Nodeclient uses two channels to connect with the back end components. Via HTTP (
 2. Verify that the server stated in the mbox_config.json file is the same as local.module.js at line 22:
     -   mbox_websocket_endpoint: ```ws://<<SERVER_IP>>:<<SERVER_PORT>>/morpheusagent-websocket```
 3. Restart the nodeclient
+
+## Acknowledgements
+Carl-Zeiss-Foundation funded the research on which this Software was developed: “Non-invasive system for measuring parameters relevant to sleep quality” (project number: P2019-03-003).
